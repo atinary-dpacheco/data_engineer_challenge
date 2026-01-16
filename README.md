@@ -8,8 +8,8 @@ Your mission is to process a "raw" binary dataset and transform it into a standa
 ## 2. The Dataset
 You are provided with a binary Protobuf file (`ord_challenge_subset.pb.gz`) containing a mixture of Buchwald-Hartwig reactions from two distinct sources. You can explore these datasets on the ORD website:
 
-*   **AstraZeneca ELN:** [Dataset ord-00005539...](https://research.open-reaction-database.org/dataset/ord-00005539a1e04c809a9a78647bea649c)
-*   **Merck/Chemistry Informer HTE:** [Dataset ord-026684...](https://research.open-reaction-database.org/dataset/ord-026684a62f91469db49c7767d16c39fb)
+*   **AstraZeneca ELN:** [Dataset 1](https://open-reaction-database.org/dataset/ord_dataset-00005539a1e04c809a9a78647bea649c)
+*   **Merck/Chemistry Informer HTE:** [Dataset 2](https://open-reaction-database.org/dataset/ord_dataset-cbcc4048add7468e850b6ec42549c70d)
 
 ## 3. The Task: Semantic Extraction & Harmonization
 Your goal is to flatten this hierarchical Protobuf data into a single **CSV file**. You may use any tools or libraries (e.g., RDKit, Pandas, etc.) to achieve this.
