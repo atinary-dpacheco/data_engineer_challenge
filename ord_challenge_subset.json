@@ -1,0 +1,6172 @@
+{
+  "name": "Mixed Buchwald-Hartwig Subset for Interview",
+  "reactions": [
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "0"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+        }
+      ],
+      "inputs": {
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00222,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 8.86e-05,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 4.43e-05,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CCOC1=C(C=C2C(=C1)N=CC(=C2NC3=C(C=C(C=C3)F)F)C(=O)OCC)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000886,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(C)N1CCNCC1"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00177,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 110.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "To a solution of ethyl 6-bromo-4-(2,4-difluorophenylamino)-7-ethoxyquinoline-3-carboxylate (400 mg, 0.89 mmol) and 1-(Isopropyl)piperazine (254 \u00b5l, 1.77 mmol) in dioxane was added cesium carbonate (722 mg, 2.22 mmol), tris(dibenzylideneacetone)dipalladium(0) (40.6 mg, 0.04 mmol) and rac-2,2'-Bis(diphenylphosphino)-1,1'-binaphthyl (55.2 mg, 0.09 mmol). Reaction vessel in oil bath set to 110 \u00b0C. 11am  After 5 hours, MS shows product (major peak 499), and SM (minor peak 453).  o/n, MS shows product peak. Reaction cooled, concentrated onto silica, and purified on ISCO. 40g column, 1:1 EA:Hex, then 100% EA.  289mg yellow solid. NMR (EN00180-62-1) supports product, but some oxidised BINAP impurity (LCMS 655).  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CCOC1=C(C=C2C(=C1)N=CC(=C2NC3=C(C=C(C=C3)F)F)C(=O)OCC)N4CCN(CC4)C(C)C"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 65.39
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "07/01/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-56b1f4bfeebc4b8ab990b9804e798aa7"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "1"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "1.3.4 [N-arylation with Ar-X] Iodo Buchwald-Hartwig amination"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "COC1=CC=CC=C1"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.0332,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.019,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000762,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000305,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)I"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00914,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1C=NC2=C1C=C(C(=C2F)N)C(=O)OC"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00762,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 100.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "9,9-Dimethyl-4,5-bis(diphenylphosphino)xanthene (441 mg, 0.76 mmol) and Tris(dibenzylideneacetone)dipalladium(0) (279 mg, 0.30 mmol) were added to a round bottom flask which was evacuated and flushed with nitrogen 3 times, anisole (16.600 ml) was added and the mixture evacuated and flushed with nitrogen 3 times and then heated to 50\u00baC for 10 minutes. Cesium carbonate (6204 mg, 19.04 mmol), methyl 5-amino-4-fluoro-1-methyl-1H-benzo[d]imidazole-6-carboxylate (1700 mg, 7.62 mmol) and Iodobenzene (1.023 ml, 9.14 mmol) were stirred in anisole (33.2 ml), the flask was evacuated and flushed with nitrogen three times and then heated to 50\u00baC. The catalyst mixture was transferred into the flask with the reactants (by syringe) and the mixture heated to 100 \u00b0C for 18 hours. The reaction mixture was diluted with isohexane (60 ml) and the solid collected by filtration and washed with more isohexane (30 ml). The solid was slurried in DCM / MeOH and adsorbed onto silica then purified by flash silica chromatography eluting with 2% 3.7N NH3 / MeOH in DCM to give methyl 4-fluoro-1-methyl-5-(phenylamino)-1H-benzo[d]imidazole-6-carboxylate (1310 mg, 57.5 %) as a yellow solid.  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1C=NC2=C1C=C(C(=C2F)NC3=CC=CC=C3)C(=O)OC"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 57.47
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "05/16/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-1169cbe9fa064a879ac34b2e524a4e69"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "3"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "1.3.4 [N-arylation with Ar-X] Iodo Buchwald-Hartwig amination"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "COC1=CC=CC=C1"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.0149,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0168,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000672,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000269,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)I"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00806,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1C=NC2=C1C=C(C(=C2F)N)C(=O)OC"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00672,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 100.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "9,9-Dimethyl-4,5-bis(diphenylphosphino)xanthene (389 mg, 0.67 mmol) and Tris(dibenzylideneacetone)dipalladium(0) (246 mg, 0.27 mmol) were added to a round bottom flask which was evacuated and flushed with nitrogen 3 times, anisole (14.900 ml) was added and the mixture evacuated and flushed with nitrogen 3 times and then heated to 50\u00baC for 10 minutes. Cesium carbonate (5474 mg, 16.80 mmol), methyl 5-amino-4-fluoro-1-methyl-1H-benzo[d]imidazole-6-carboxylate (1500 mg, 6.72 mmol) and Iodobenzene (0.902 ml, 8.06 mmol) were stirred in anisole (29.8 ml), the flask was evacuated and flushed with nitrogen three times and then heated to 50\u00baC. The catalyst mixture was transferred into the flask with the reactants (by syringe) and the mixture heated to 100 \u00b0C for 18 hours. The reaction mixture was diluted with isohexane (50 ml) the solid collected by filtration and washed with more isohexane (25 ml). The solid was slurried in dichloromethane (40 ml) and methanol (10 ml) and filtered, washing the remaining solid with more dichloromethane / methanol. The filtratre (containing product) was evaporated onto silica and purified by flash silica chromatography, eluting with 2% 3.7N NH3 / MeOH in DCM. Pure fractions were evaporated to dryness to afford methyl 4-fluoro-1-methyl-5-(phenylamino)-1H-benzo[d]imidazole-6-carboxylate (1316 mg, 65.4 %) as a light yellow solid.    "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1C=NC2=C1C=C(C(=C2F)NC3=CC=CC=C3)C(=O)OC"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 65.43
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "05/06/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-13992005c22d4673aa802b5e140076e8"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "4"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "1.3.4 [N-arylation with Ar-X] Iodo Buchwald-Hartwig amination"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "COC1=CC=CC=C1"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.0298,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0168,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000672,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.C1=CC=C(C=C1)/C=C/C(=O)/C=C/C2=CC=CC=C2.[Pd].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000269,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=C(C=C1)I"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00806,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1C=NC2=C1C=C(C(=C2F)N)C(=O)OC"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00672,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 100.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "9,9-Dimethyl-4,5-bis(diphenylphosphino)xanthene (389 mg, 0.67 mmol) and Tris(dibenzylideneacetone)dipalladium(0) (246 mg, 0.27 mmol) were added to a round bottom flask which was evacuated and flushed with nitrogen 3 times, anisole (14.900 ml) was added and the mixture evacuated and flushed with nitrogen 3 times and then heated to 50\u00baC for 10 minutes. Cesium carbonate (5474 mg, 16.80 mmol), methyl 5-amino-4-fluoro-1-methyl-1H-benzo[d]imidazole-6-carboxylate (1500 mg, 6.72 mmol) and Iodobenzene (0.902 ml, 8.06 mmol) were stirred in anisole (29.800 ml), the flask was evacuated and flushed with nitrogen three times and then heated to 50\u00baC. The catalyst mixture was transferred into the flask with the reactants (by syringe) and the mixture heated to 100 \u00b0C for 18 hours. The reaction mixture was diluted with isohexane (50 m) and the solid collected by filtration and washed with more isohexane (25 ml). The solid was slurried in DCM / MeOH and adsorbed onto silica then purified by flash silica chromatography eluting with 2% 3.7N NH3 / MeOH in DCM to give methyl 4-fluoro-1-methyl-5-(phenylamino)-1H-benzo[d]imidazole-6-carboxylate (1510 mg, 75 %) as a light yellow solid.  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1C=NC2=C1C=C(C(=C2F)NC3=CC=CC=C3)C(=O)OC"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 75.07
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "05/08/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-a36b48917c9942d1a34637511773ee1f"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "7"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "0.0 [Unassigned] Unrecognized"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)N(C)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.13,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00276,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00276,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)O.CC(=O)O.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00193,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)Cl)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0276,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CC=C1N)S(=O)(=O)N"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0358,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 150.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": " 3-(2-chloropyridin-4-yloxy)-2,6-dimethylpyridine (6.47 g, 27.57 mmol), Sulfanilamide (6.17 g, 35.84 mmol), CESIUM CARBONATE (13.47 g, 41.35 mmol) and XANTPHOS (1.595 g, 2.76 mmol) were stirred in DMA (130 ml). Purged this stirred mixture by bubbling nitrogen through for an hour, then added the Palladium acetate. Heated to 130\u00baC in a metal block (block at 150\u00baC) and held at this temperature for 3 hours. LCMS (monitorbase) then showed DP as MH+ = 370.99 and MH- = 369.03 at 1.82 minutes, 84%. Allowed to cool to room temperature. The reaction mixture was evaporated to dryness at 50\u00baC giving __ a dirty-yellow solid residue.  Treated with 150 ml water and the resulting yellow solid filtered off and washed with water. Dried by desiccation under high vacuum over phosphorous pentoxide at room temperature to constant weight. This afforded 11.98 g pale- yellow solid [A].  LCMS(monitorbase) showed it to be DP as MH+ = 370.99 and MH- = 369.03 at 1.83 minutes, 90%.  _ _ This material was crystallised from acetonitrile; dissolved up in ~1 litre boiling acetonitrile and the cloudy solution filtered hot through a fluted paper. Crystallisation of product from the filtrate was eventually achieved, with difficulty, by rapid cooling in drikold/acetone and seeding/scratching as it warmed up. Cooled in ice/water then the solid was collected by filtration and washed with chilled acetonitrile. Dried by desiccation under high vacuum at room temperature to constant weight. This afforded 6.03 g creamy-white solid [B].  LCMS (monitorbase) then showed DP as MH+ = 370.99 and MH- = 369.03 at 1.49 minutes, 96%.  Material B was combined with the same product from P14-A and this total of 7.32 g recrystallised from the minimum of acetonitrile (~550 ml) with hot filtration again to remove trace insoluble matter. Cooled in ice/water and seeded/scratched to induce crystallisation then stood in the fridge overnight. The solid was collected by filtration and washed with chilled acetonitrile. Dried by desiccation under high vacuum initially at room temperature, then at 60\u00b0C, to constant weight. This afforded 5.04 g creamy-white solid [C].  LCMS (monitorbase) then showed DP as MH+ = 371.06 and MH- = 369.08 at 1.85 minutes, 99%.  Unfortunately nmr showed entrapped acetonitrile at an unacceptable level (~0.5 equiv.). To remove this material C was stirred in ~100 ml ether for an hour, recollected and washed with ether. Dried at 60\u00b0C as before to constant weight. This afforded 4.73 g creamy-white solid [D].  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)NC3=CC=C(C=C3)S(=O)(=O)N)C"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 46.32
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "05/15/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-5fc624fd97b7430eafbe8dcc049d170b"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "8"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "0.0 [Unassigned] Unrecognized"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)N(C)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.2,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00426,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00426,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)O.CC(=O)O.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00298,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)Cl)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0426,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CC=C1N)S(=O)(=O)N"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0554,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 130.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "XANTPHOS (2.466 g, 4.26 mmol) was added to 3-(2-chloropyridin-4-yloxy)-2,6-dimethylpyridine (10g, 42.61 mmol), Sulfanilamide (9.54 g, 55.39 mmol) and CESIUM CARBONATE (20.83 g, 63.92 mmol) in DMA (200 ml) at 20\u00baC. Nitrogen was bubbled through the reaction mixture for 1 hour then PALLADIUM(II) ACETATE (0.670 g, 2.98 mmol) added. The suspension was stirred at 130 \u00b0C for 3 hours. The reaction mixture was filtered then evaporated to dryness. The residue was triturated with water (150 mL) and filtered to give crude product as a cream solid - 90% pure. The crude solid was triturated with hot acetonitrile (300 mL) and filtered to afford crude product as a cream solid - 98% by LCMS. This was combined with the product from EN02084-31 and dissolved in boiling acetonitrile (approx 1 L). The solution was concentrated to 500 mL and cooled to ice bath temperature with stirring. A precipitate formed which and the suspension was stirred at room temperature overnight. The solid was filtered to afford 4-(4-(2,6-dimethylpyridin-3-yloxy)pyridin-2-ylamino)benzenesulfonamide (12.00 g, 76 %) as a cream solid.  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)NC3=CC=C(C=C3)S(=O)(=O)N)C"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 76.03
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "09/11/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-c34e3f2a76e4462999414a169b276944"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "9"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "0.0 [Unassigned] Unrecognized"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)N(C)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.04,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000847,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000847,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)O.CC(=O)O.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000579,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)Cl)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00852,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CC=C1N)S(=O)(=O)N"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0111,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 130.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": " 3-(2-chloropyridin-4-yloxy)-2,6-dimethylpyridine (2 g, 8.52 mmol), Sulfanilamide (1.91 g, 11.09 mmol), CESIUM CARBONATE (4.17 g, 12.80 mmol) and XANTPHOS (490 mg, 0.85 mmol) were stirred in DMA (40 ml). Purged this stirred mixture by bubbling nitrogen through for an hour, then added the Palladium acetate. Heated to 130\u00baC in a metal block (block at 150\u00baC) and held at this temperature for 3 hours. LCMS (monitorbase) then showed DP as MH+ = 370.99 and MH- = 369.03 at 1.83 minutes, 83%. Allowed to cool to room temperature. The reaction mixture was evaporated to dryness at 50\u00baC giving a light-green solid residue.  Attempted to partition this residue between DCM (~50 ml) and saturated aqueous sodium hydrogen carbonate (~50 ml). The insoluble matter was filtered off and washed through with water, then DCM. This dirty-yellow solid was dried by desiccation overnight. Wt = 2.04 g. LCMS showed it to be DP, 94%.  This material was crystallised from acetonitrile; dissolved up in ~150 ml boiling acetonitrile and the cloudy solution treated with a little Norit SX4 decolourising carbon. Filtered hot through a fluted paper. Slow crystallisation of a creamy-white solid occurred on cooling to room temperature. Cooled in ice/water then the bulky solid was collected by filtration and washed with chilled acetonitrile. Dried by desiccation under high vacuum at room temperature overnight. This afforded 1.29 g creamy-white bulky solid [A].  LCMS (monitorbase) then showed DP as MH+ = 370.99 and MH- = 369.03 at 1.83 minutes, 99%.  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)NC3=CC=C(C=C3)S(=O)(=O)N)C"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 40.86
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "05/01/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-5853dba403864121802609ae67a6fbe4"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "10"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "0.0 [Unassigned] Unrecognized"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)N(C)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.13,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00277,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00277,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)O.CC(=O)O.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00194,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)Cl)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0277,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CC=C1N)S(=O)(=O)N"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.036,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 130.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "XANTPHOS (1.603 g, 2.77 mmol) was added to 3-(2-chloropyridin-4-yloxy)-2,6-dimethylpyridine (6.5 g, 27.70 mmol), Sulfanilamide (6.20 g, 36.01 mmol) and CESIUM CARBONATE (13.54 g, 41.55 mmol) in DMA (130 ml) at 20\u00baC. Nitrogen was bubbled through the reaction mixture for 1 hour then PALLADIUM(II) ACETATE (0.435 g, 1.94 mmol) added. The suspension was stirred at 130 \u00b0C for 3 hours. The reaction mixture was cooled to ambient temperature and filtered then evaporated to dryness. The residue was triturated with water (150 mL) and filtered to give crude product as a cream solid which was 90% pure by LCMS. The crude solid was triturated with hot MeCN (300 mL) to give a solid which was collected by filtration and dried under vacuum to give a cream solid (7.86g) which was 95% pure by LCMS. The solid was dissolved in the minimum amount of boiling MeCN (650 mL) and filtered to remove remaining trace solids. The filtrate was concentrated to approximately 400 mL and stirred at ice bath temperature until a precipitate formed. The suspension was stirred at room temperature overnight then filtered to afford a cream solid (6.4g) which was 100% pure by LCMS. Combined with EN02084-42 to get a single larger batch.  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1=NC(=C(C=C1)OC2=CC(=NC=C2)NC3=CC=C(C=C3)S(=O)(=O)N)C"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 62.38
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "09/05/2008"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-0c597cbe4940491092243bda6c97b98c"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "11"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "1.3.1 [N-arylation with Ar-X] Bromo Buchwald-Hartwig amination"
+        }
+      ],
+      "inputs": {
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0156,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC1(C2=C(C(=CC=C2)P(C3=CC=CC=C3)C4=CC=CC=C4)OC5=C1C=CC=C5P(C6=CC=CC=C6)C7=CC=CC=C7)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000625,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)O.CC(=O)O.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00052,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=C(C=NC=C1Br)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.0052,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)N1CCNCC1"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00573,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 140.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "3,5-dibromopyridine (1.233 g, 5.20 mmol), 1-(piperazin-1-yl)ethanone (0.734 g, 5.73 mmol), PdOAc2 (0.117 g, 0.52 mmol), XANTPHOS (0.361 g, 0.62 mmol), Cs2CO3 (5.09 g, 15.61 mmol), 1,4-dioxane as added to a 10 mL microwave vial. This was degassed and refilled with N2 and then heated at 140 \u00b0C in microwave for 1h.  LCMS showed reaction done with the peak at Rf1.24 showed a fragment mass of 284.  Evaporated solvent. Residue purified by ISCO (0-20% MeOH in EtOAc )to get the desired product 1-(4-(5-bromopyridin-3-yl)piperazin-1-yl)ethanone (0.470 g, 31.8 %).  Trial # 1:  3,5-dibromopyridine (407 mg, 1.72 mmol), 1-(piperazin-1-yl)ethanone (231 mg, 1.81 mmol), PdOAc2 (38.6 mg, 0.17 mmol), XANTPHOS (119 mg, 0.21 mmol), Cs2CO3 (1681 mg, 5.16 mmol), 1,4-dioxane as added to a 10 mL microwave vial. This was degassed and refilled with N2 and then heated at 140 \u00b0C in microwave for 1h.  LCMS showed reaction done with the peak at Rf1.22 showed a fragment mass of 284.  Evaporated solvent. Residue purified by ISCO (0-20% MeOH in EtOAc )to get the desired product 1-(4-(5-bromopyridin-3-yl)piperazin-1-yl)ethanone (118mg, 24%).  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)N1CCN(CC1)C2=CC(=CN=C2)Br"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 31.78
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "04/15/2010"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-b3c4a680709749268aeba07b670223ef"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "CUSTOM",
+          "details": "reaction index",
+          "value": "12"
+        },
+        {
+          "type": "REACTION_TYPE",
+          "details": "reaction type",
+          "value": "1.3.2 [N-arylation with Ar-X] Chloro Buchwald-Hartwig amination"
+        }
+      ],
+      "inputs": {
+        "Solvent": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "COCCOC"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.0025,
+                  "units": "LITER"
+                }
+              },
+              "reaction_role": "SOLVENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "Base": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C(=O)([O-])[O-].[Cs+].[Cs+]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.00131,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REAGENT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "metal and ligand": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1CCC(CC1)P(C2CCCCC2)C3=CC=CC=C3C4=CC=CC=C4"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 4.37e-05,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(=O)O.CC(=O)O.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 4.37e-05,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "CATALYST",
+              "is_limiting": false
+            }
+          ]
+        },
+        "aryl halide": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1CC(OC2=C(C1)C=CC(=N2)Cl)C3=CC=CC=C3"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000437,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        },
+        "amine": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CC=C1N)N2C=CN=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 0.000437,
+                  "units": "MOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            }
+          ]
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "setpoint": {
+            "value": 100.0,
+            "precision": 10.0,
+            "units": "CELSIUS"
+          }
+        }
+      },
+      "notes": {
+        "procedure_details": "[Reactants], 8-chloro-4-methyl-2-phenyl-2,3,4,5-tetrahydropyrido[3,2-f][1,4]oxazepine (0.120 g, 0.44 mmol), Palladium(II) acetate (9.81 mg, 0.04 mmol), 2-(Dicyclohexylphosphino)biphenyl (0.015 g, 0.04 mmol) and Cesium carbonate (0.427 g, 1.31 mmol) in DME (2.5 mL) were placed in a microwave vial and flushed with argon. The reaction mixture was then run in the microwave at 100\u00b0C for 1 hr. Reaction not complete. Run for another 30 minutes in the microwave. Still not complete. Added 0.1 eq of Palladium(II)acetate and 0.1 eq of 2-(Dicyclohexylphosphino)biphenyl and let the reaction mixture run in the microwave for additional 45 minutes. Reaction complete. The reaction mixture was filtrated through celite and the filtrate was concentrated. The crude product was purified by preparative chromatography giving 0.072 g (41%) of the product.  N-(4-(1H-imidazol-1-yl)phenyl)-4-methyl-2-phenyl-2,3,4,5-tetrahydropyrido[3,2-f][1,4]oxazepin-8-amine  "
+      },
+      "outcomes": [
+        {
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1CC(OC2=C(C1)C=CC(=N2)NC3=CC=C(C=C3)N4C=CN=C4)C5=CC=CC=C5"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "type": "YIELD",
+                  "percentage": {
+                    "value": 41.47
+                  }
+                }
+              ],
+              "reaction_role": "PRODUCT"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "AstraZeneca"
+        },
+        "experiment_start": {
+          "value": "05/18/2009"
+        },
+        "publication_url": "https://chemrxiv.org/engage/chemrxiv/article-details/60c9e3f37792a23bfdb2d471",
+        "record_created": {
+          "time": {
+            "value": "10/19/2021, 12:16:25 PM"
+          },
+          "person": {
+            "name": "Bozhao Nan",
+            "organization": "Notre Dame",
+            "email": "bnan@nd.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Fri Oct 22 22:19:55 2021"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          }
+        ]
+      },
+      "reaction_id": "ord-fa122fe6774f45c5b7a107c1460052d3"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)[PH+](C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C12=NCCCN1CCCCC2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 2.045868
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.294979"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.311978"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-16e3efdfad41443eb9c0c6d1cd83ef12"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)[PH+](C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1CCCN2C1=NCCC2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 2.471271
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.300052"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.318643"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-515ed5ebcd9d4937abcc6d1ed4bb3b34"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)[PH+](C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(C)(/N=C(N(C)C)/N(C)C)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 1.889215
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.305177"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.325289"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-60529cd9eb0e4ecaab39c3eaf240af48"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)[PH+](C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CCN(P1(N(C)CCCN1C)=NC(C)(C)C)CC"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 1.965672
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.310500"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.332159"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-2bfd9f374cde4251b50e62bc8e227081"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)[PH+](C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(C)(C)N=P(N1CCCC1)(N2CCCC2)N3CCCC3"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 1.693395
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.315854"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.339112"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-f7d768eea14941d8b641e51afba22160"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)[PH+](C2=CC=CC=C2)C3=C(C4=CC=CC=C4C=C3)C5=C(C=CC6=CC=CC=C65)P(C7=CC=CC=C7)C8=CC=CC=C8.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CCN=P(N(C)C)(N(C)C)N=P(N(C)C)(N(C)C)N(C)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 11.60444
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.321497"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.346064"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-5f8d76b5503a4850842fe6e698bbb151"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Fe].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C12=NCCCN1CCCCC2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 1.17287
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.328447"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.352553"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-f38c5546ac8947a5b949002a63faa80e"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Fe].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CN1CCCN2C1=NCCC2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 0.0
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.333832"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.359213"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-60bc91025efd4fea8e5a0dfe94905ed2"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Fe].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CC(C)(/N=C(N(C)C)/N(C)C)C"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 0.0
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.338871"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.365711"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-e8211c158bf4425d9a2ee32896d0b756"
+    },
+    {
+      "identifiers": [
+        {
+          "type": "REACTION_TYPE",
+          "value": "C-N cross coupling"
+        }
+      ],
+      "inputs": {
+        "3-Bromopyridine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "3-bromopyridine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC(=CN=C1)Br"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 100.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": true
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Pd precatalyst (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)(=O)O.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C(C=C1)P(C2=CC=CC=C2)[C]3[CH][CH][CH][CH]3.C1=CC=C([C-]=C1)C2=CC=CC=C2N.[Fe].[Pd]"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 10.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "CATALYST"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "4-Phenylpiperidine (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "4-phenylpiperidine"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "C1CNCCC1C2=CC=CC=C2"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 150.0,
+                  "precision": 0.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REACTANT",
+              "is_limiting": false
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        },
+        "Base (stock solution in DMSO)": {
+          "components": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "CCN(P1(N(C)CCCN1C)=NC(C)(C)C)CC"
+                }
+              ],
+              "amount": {
+                "moles": {
+                  "value": 200.0,
+                  "units": "NANOMOLE"
+                }
+              },
+              "reaction_role": "REAGENT"
+            },
+            {
+              "identifiers": [
+                {
+                  "type": "NAME",
+                  "value": "DMSO"
+                },
+                {
+                  "type": "SMILES",
+                  "value": "CS(=O)C"
+                }
+              ],
+              "amount": {
+                "volume": {
+                  "value": 0.25,
+                  "units": "MICROLITER"
+                },
+                "volume_includes_solutes": true
+              },
+              "reaction_role": "SOLVENT"
+            }
+          ]
+        }
+      },
+      "setup": {
+        "vessel": {
+          "type": "WELL_PLATE",
+          "material": {
+            "type": "CUSTOM",
+            "details": "Cyclic Olefin-Copolymer (COC)"
+          },
+          "volume": {
+            "value": 12.5,
+            "units": "MICROLITER"
+          }
+        },
+        "is_automated": true,
+        "environment": {
+          "type": "GLOVE_BOX"
+        }
+      },
+      "conditions": {
+        "temperature": {
+          "control": {
+            "type": "AMBIENT"
+          }
+        },
+        "pressure": {
+          "control": {
+            "type": "SEALED",
+            "details": "sealed with PFA film"
+          },
+          "atmosphere": {
+            "type": "NITROGEN"
+          }
+        },
+        "stirring": {
+          "type": "NONE",
+          "details": "nanomole scale HTE, homogenous solution, no stirring"
+        },
+        "reflux": false,
+        "conditions_are_dynamic": false
+      },
+      "notes": {
+        "is_heterogeneous": false,
+        "forms_precipitate": false,
+        "offgasses": false,
+        "is_sensitive_to_moisture": true,
+        "is_sensitive_to_oxygen": true
+      },
+      "workups": [
+        {
+          "type": "ADDITION",
+          "details": "solution of bipheny (3%) and acetic acid to quench reaction. Acetic acid amount not specified.",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "acetic acid"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CC(=O)O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 1.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "WORKUP"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "biphenyl"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "C1=CC=C(C=C1)C2=CC=CC=C2"
+                  }
+                ],
+                "amount": {
+                  "moles": {
+                    "value": 3.0,
+                    "units": "NANOMOLE"
+                  }
+                },
+                "reaction_role": "INTERNAL_STANDARD"
+              },
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(=O)C"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 3.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ALIQUOT",
+          "amount": {
+            "volume": {
+              "value": 1.0,
+              "units": "MICROLITER"
+            }
+          }
+        },
+        {
+          "type": "ADDITION",
+          "input": {
+            "components": [
+              {
+                "identifiers": [
+                  {
+                    "type": "NAME",
+                    "value": "DMSO"
+                  },
+                  {
+                    "type": "SMILES",
+                    "value": "CS(C)=O"
+                  }
+                ],
+                "amount": {
+                  "volume": {
+                    "value": 75.0,
+                    "units": "MICROLITER"
+                  },
+                  "volume_includes_solutes": true
+                },
+                "reaction_role": "SOLVENT"
+              }
+            ]
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "reaction_time": {
+            "value": 22.0,
+            "units": "HOUR"
+          },
+          "products": [
+            {
+              "identifiers": [
+                {
+                  "type": "SMILES",
+                  "value": "C1=CC=NC=C1N1CCC(C2=CC=CC=C2)CC1"
+                }
+              ],
+              "is_desired_product": true,
+              "measurements": [
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "IDENTITY",
+                  "uses_authentic_standard": false
+                },
+                {
+                  "analysis_key": "UPLC analysis of mixture",
+                  "type": "AREA",
+                  "uses_internal_standard": true,
+                  "is_normalized": true,
+                  "uses_authentic_standard": false,
+                  "percentage": {
+                    "value": 0.0
+                  }
+                }
+              ]
+            }
+          ],
+          "analyses": {
+            "UPLC analysis of mixture": {
+              "type": "LC",
+              "details": "UPLC with internal standard. Yield was relative in the paper (LC ratio without response factor correction). Yield established here was back-calculated from the scaled-up reaction. Scaled up reactions have isolated yield, which was used to back-calculate the yield for all screening reactions.",
+              "instrument_manufacturer": "Waters"
+            }
+          }
+        }
+      ],
+      "provenance": {
+        "experimenter": {
+          "organization": "Merck Research Laboratories"
+        },
+        "publication_url": "https://science.sciencemag.org/content/347/6217/49/tab-pdf",
+        "record_created": {
+          "time": {
+            "value": "9/3/2020, 5:11:39 PM"
+          },
+          "person": {
+            "name": "Jason Wang",
+            "orcid": "0000-0001-5826-2554",
+            "organization": "Princeton U",
+            "email": "wang10@princeton.edu"
+          }
+        },
+        "record_modified": [
+          {
+            "time": {
+              "value": "Wed Nov 18 17:55:22 2020"
+            },
+            "person": {
+              "username": "github-actions",
+              "email": "github-actions@github.com"
+            },
+            "details": "Automatic updates from the submission pipeline."
+          },
+          {
+            "time": {
+              "value": "2020-12-17 21:32:43.344357"
+            },
+            "person": {
+              "username": "connorcoley",
+              "email": "ccoley@mit.edu"
+            },
+            "details": "Automatic migration from schema v0.1.1 to v0.2.3"
+          },
+          {
+            "time": {
+              "value": "2021-03-04 14:47:38.372136"
+            },
+            "person": {
+              "username": "skearnes",
+              "email": "kearnes@google.com"
+            },
+            "details": "Automatic migration from schema v0.2.15 to v0.3.0"
+          }
+        ]
+      },
+      "reaction_id": "ord-903bee530ba545249f6baab3a2198a29"
+    }
+  ]
+}
