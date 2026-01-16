@@ -27,13 +27,14 @@ Your final CSV should capture the following core information for each reaction:
 *   **Reaction ID**
 *   **Aryl Halide:** SMILES string and Amount (mass/volume/moles).
 *   **Amine:** SMILES string and Amount (mass/volume/moles).
+*   **Base:** SMILES string and Amount (mass/volume/moles).
 *   **Catalyst:** SMILES string (labeled in metadata) and Amount.
 *   **Desired Product:** SMILES string (labeled with the `is_desired_product` flag).
 *   **Yield Percentage:** Resolve the yield regardless of whether it was recorded as a "UPLC Analysis" (Merck) or a "Product Measurement" (AstraZeneca).
 *   **Reaction Conditions:** Include the Temperature and the Reaction Time.
 
 ### Part C: Systems Design (Conceptual)
-*   **Database Architecture:** Propose a long-term database schema for this data using **DBML** (Database Markup Language).
+*   **Database Architecture:** Propose a long-term database schema for this data. Choose the database paradigm (relational or document-based) that you believe best fits the data and justify your choice. Use **DBML** (Database Markup Language) for relational designs, or **JSON Schema** for document database designs.
 *   **Unstructured Data:** Researchers record a free-text **Procedure Description** (step-by-step instructions) and **Analysis Notes**. For future AI/LLM training, how would you architect the storage of this unstructured text so it remains linked to the quantitative results while remaining efficiently searchable?
 
 ---
@@ -43,28 +44,11 @@ Please provide a folder containing:
 
 1.  **`extraction_script.py`**: Your Python code used to parse the `.pb.gz` file and execute your extraction logic.
 2.  **`processed_data.csv`**: Your final standardized dataset containing the key information requested above.
-3.  **`schema.dbml`**: Your proposed database structure.
+3.  **`schema.dbml`** or **`schema.json`**: Your proposed database structure (DBML for relational, JSON Schema for document-based).
 4.  **`DESIGN.md`**: A short document (max 1 page) addressing:
     *   **Extraction Methodology:** How did you programmatically identify the Aryl Halide and the Amine? 
     *   **Data Representation:** How did you choose to represent amounts and conditions in the CSV? Why is your chosen format suitable for Machine Learning?
+    *   **Database Choice:** Why did you choose a relational or document-based database for this data? What are the trade-offs?
     *   **Search Logic:** How would you query for "Reactions > 80°C" if units are mixed (Kelvin vs. Celsius)?
     *   **Unstructured Data:** Your proposal for storing Procedure and Analysis text.
-
----
-
-## 5. Evaluation Criteria
-*   **Analytical Reasoning:** How you translated high-level descriptions into a robust programmatic search for chemical components.
-*   **Data Integrity:** Successful capture of yield values and amounts across inconsistent datasets.
-*   **Systems Thinking:** A DBML schema that shows a clear understanding of how to structure scientific entities for both ML and data-licensing purposes.
-*   **Pragmatism:** Your ability to handle "real-world" messy data (missing units, ambiguous roles) and your rationale for the final CSV structure.
-
-***
-
-### Evaluation Guide for the Hiring Manager:
-
-1.  **The "Amount" Representation:** Since you didn't force them to separate values and units, check how they did it.
-    *   *The "String" Path:* They put `"10 mg"` in a column. (Fine for a quick script, but bad for ML).
-    *   *The "ML" Path:* They separated them into `amount_value` and `amount_unit` or normalized everything to a standard unit. This shows they are thinking about the end-user (the ML model).
-2.  **The Chemical Logic:** Look at how they identified the Aryl Halide vs. Amine. Did they use a specialized library like RDKit, or did they write a clever string heuristic? How did they handle molecules that could be both?
-3.  **The Yield Resolution:** Verify they found the yield in both the Merck (Analyses) and AstraZeneca (Products) blocks.
-4.  **The Procedure Storage:** Does their proposal for unstructured text suggest they understand that large blocks of text don't belong in a standard relational table? (Look for mentions of Blob storage, JSONB, or Vector DBs).
+    *   **Scalability:** How would your solution change if you need to store 100s of reactions, 1000s, 10000s, 100000s?
