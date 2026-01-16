@@ -5,6 +5,7 @@
 #     "protobuf",
 # ]
 # ///
+# This file will be not be shared with the applicant!
 
 import json
 import os
