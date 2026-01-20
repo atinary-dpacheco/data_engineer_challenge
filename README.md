@@ -5,13 +5,27 @@ Atinary Technologies is building the "Data Backbone" for the future of chemistry
 
 Your mission is to process a "raw" binary dataset and transform it into a standardized format. This task simulates the real-world challenge of integrating diverse scientific sources where the same concepts are recorded with different structures and styles.
 
-## 2. The Dataset
+## 2. Important Guidelines for Applicants
+
+**Time Commitment:** This challenge is designed to take approximately **2 hours maximum**. We value your time and want you to focus on demonstrating your problem-solving approach rather than spending excessive time on implementation details.
+
+**Tool Usage:** You are **encouraged to use any tools, libraries, or resources** of your preference, including:
+- Large Language Models (ChatGPT, Claude, GitHub Copilot, etc.)
+- Online documentation and tutorials
+- Any Python libraries or frameworks you find helpful
+- AI-assisted coding tools
+
+We're interested in seeing how you approach the problem, make design decisions, and integrate tools effectively into your workflow. The goal is to evaluate your engineering judgment, not to test memorization or manual coding speed.
+
+## 3. The Dataset
 You are provided with a binary Protobuf file (`ord_challenge_subset.pb.gz`) containing a mixture of Buchwald-Hartwig reactions from two distinct sources. You can explore these datasets on the ORD website:
 
 *   **AstraZeneca ELN:** [Dataset 1](https://open-reaction-database.org/dataset/ord_dataset-00005539a1e04c809a9a78647bea649c)
 *   **Merck/Chemistry Informer HTE:** [Dataset 2](https://open-reaction-database.org/dataset/ord_dataset-cbcc4048add7468e850b6ec42549c70d)
 
-## 3. The Task: Semantic Extraction & Harmonization
+📝 Before you start, take a look at the ORD Schema: https://docs.open-reaction-database.org/en/latest/schema.html 
+
+## 4. The Task: Semantic Extraction & Harmonization
 Your goal is to flatten this hierarchical Protobuf data into a single **CSV file**. You may use any tools or libraries (e.g., RDKit, Pandas, etc.) to achieve this.
 
 ### Part A: The Extraction Challenge
@@ -39,7 +53,7 @@ Your final CSV should capture the following core information for each reaction:
 
 ---
 
-## 4. Required Deliverables
+## 5. Required Deliverables
 Please provide a folder containing:
 
 1.  **`extraction_script.py`**: Your Python code used to parse the `.pb.gz` file and execute your extraction logic.
@@ -51,4 +65,8 @@ Please provide a folder containing:
     *   **Database Choice:** Why did you choose a relational or document-based database for this data? What are the trade-offs?
     *   **Search Logic:** How would you query for "Reactions > 80°C" if units are mixed (Kelvin vs. Celsius)?
     *   **Unstructured Data:** Your proposal for storing Procedure and Analysis text.
-    *   **Scalability:** How would your solution change if you need to store 100s of reactions, 1000s, 10000s, 100000s?
+    *   **Scalability:** How would your solution change if you need to store hundreds of reactions, hundreds of thousands, millions, or billions?
+
+⚠️ **Note:** Be prepared to discuss your code, design choices, and problem-solving methodology in detail during the subsequent live interview, as the DESIGN.md document and your deliverables will form the basis of the questions.
+
+
