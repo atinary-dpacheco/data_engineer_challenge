@@ -59,7 +59,7 @@ Please provide a folder containing:
 1.  **`extraction_script.py`**: Your Python code used to parse the `.pb.gz` file and execute your extraction logic.
 2.  **`processed_data.csv`**: Your final standardized dataset containing the key information requested above.
 3.  **`schema.dbml`** or **`schema.json`**: Your proposed database structure (DBML for relational, JSON Schema for document-based).
-4.  **`DESIGN.md`**: A short document (max 1 page) addressing:
+4.  **`DESIGN.md`**: A short document (max 2 pages) addressing:
     *   **Extraction Methodology:** How did you programmatically identify the Aryl Halide and the Amine? 
     *   **Data Representation:** How did you choose to represent amounts and conditions in the CSV? Why is your chosen format suitable for Machine Learning?
     *   **Database Choice:** Why did you choose a relational or document-based database for this data? What are the trade-offs?
